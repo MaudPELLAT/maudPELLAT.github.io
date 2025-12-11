@@ -19,9 +19,9 @@
             height: 450px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end; /* Nom plus bas dans l'image */
             align-items: flex-start;
-            padding: 60px;
+            padding: 60px 40px 40px 40px;
             text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
         }
 
@@ -34,7 +34,7 @@
 
         header h2 {
             font-size: 28px;
-            margin-top: 10px;
+            margin-top: 5px;
             color: #ffffff;
         }
 
@@ -46,6 +46,12 @@
             background-color: #ffffffdd;
             box-shadow: 0 6px 20px rgba(0,0,0,0.05);
             margin-bottom: 30px;
+            text-align: left; /* Alignement à gauche */
+        }
+
+        section p {
+            margin-top: 0;
+            margin-bottom: 20px; /* Espacement entre paragraphes uniforme */
         }
 
         h3 {
@@ -108,6 +114,8 @@
             header {
                 align-items: center;
                 text-align: center;
+                justify-content: center;
+                padding: 40px 20px;
             }
             .section-flex {
                 flex-direction: column;
@@ -124,13 +132,23 @@
 
     <section>
         <h3>Qui suis-je ?</h3>
-        <!-- Ton texte complet ici -->
+        <p>Consultante en Ressources Humaines depuis 2007, j’accompagne des entreprises de toutes tailles dans leurs enjeux RH : recrutement, intégration, développement des compétences, stabilisation et fidélisation des équipes, projections RH, etc.</p>
+        <p>Ce qui m’anime le plus dans mon métier, c’est toute la richesse de la dimension humaine.</p>
+        <p>C’est pourquoi j’ai également développé une approche tournée vers l’accompagnement des personnes, pour vous aider à répondre à vos problématiques et à retrouver plus de lumière, de douceur et d’alignement avec vous-même, dans votre vie professionnelle comme personnelle.</p>
+        <!-- Tu peux ajouter le reste du texte ici -->
     </section>
 
     <section class="section-flex">
         <div>
             <h3>À qui s’adresse la Gestalt et pourquoi ?</h3>
-            <!-- Contenu texte et liste -->
+            <p>Mon accompagnement s’adresse à toute personne, adulte, qui souhaite mieux se comprendre, lever ses blocages et retrouver de l’alignement dans sa vie professionnelle et personnelle...</p>
+            <ul>
+                <li>Gérer le stress, les blocages ou les difficultés relationnelles, au travail ou dans votre vie personnelle</li>
+                <li>Mieux prendre votre place, poser vos limites et gérer votre charge cognitive</li>
+                <li>Comprendre vos schémas répétitifs pour ne plus rester coincé dans les mêmes situations</li>
+                <li>Apprendre à reconnaître et réguler vos émotions</li>
+                <li>Clarifier et enrichir vos relations avec les autres</li>
+            </ul>
             <a href="tel:0648016507" class="btn-contact">Prendre rendez-vous</a>
         </div>
         <div>
@@ -140,7 +158,8 @@
     </section>
 
     <section>
-        <!-- Paragraphe de conclusion/contact -->
+        <p>Je vous accompagne en visioconférence, pour plus de praticité et de flexibilité, où que vous soyez. Faire appel à moi, c’est bénéficier d’un accompagnement bienveillant, personnalisé et concret, qui vous permet de reprendre le gouvernail de votre vie, de retrouver de la légèreté et de créer un chemin qui vous ressemble vraiment.</p>
+        <p>Pour me contacter et prendre rendez‑vous appelez‑moi au 06 48 01 65 07</p>
     </section>
 
     <footer>
