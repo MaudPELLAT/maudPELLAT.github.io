@@ -3,207 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maud PELLAT – Gestalt Praticienne</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <title>Maud PELLAT - Gestalt Praticienne</title>
     <style>
-        /* Styles généraux */
         body {
-            font-family: 'Lato', sans-serif;
             margin: 0;
-            padding: 0;
-            line-height: 1.8;
-            background-color: #d8e6f2; /* bleu doux pour tout le site */
-            color: #2c3e50; /* bleu foncé pour le texte */
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            color: #1a3d6d;
+            background-color: #f7f9fc;
         }
-
-        /* Header avec photo visible */
         header {
-            text-align: left;
-            padding: 80px 60px;
-            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-            border-bottom: 1px solid #c5d6e5;
+            background: url('https://media.posterstore.com/site_images/6862c77d0b074212f55c6be2_678648473_PS51410-5.jpg') center/cover no-repeat;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 60px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
         }
-
         header h1 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 400;
-            font-size: 3.5rem;
-            color: white;
+            font-family: 'Edwardian Script ITC', cursive;
+            font-size: 60px;
             margin: 0;
-            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+            color: #ffffff;
         }
-
         header h2 {
-            font-family: 'Lato', sans-serif;
-            font-weight: 500;
-            font-size: 2rem;
-            color: #f0f8ff;
+            font-size: 28px;
             margin-top: 10px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            color: #ffffff;
         }
-
-        /* Sections principales */
         section {
-            max-width: 900px;
-            margin: 60px auto;
-            background: white;
-            padding: 50px;
-            border-radius: 14px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
         }
-
         h3 {
-            font-family: 'Lato', sans-serif;
-            font-size: 1.9rem;
-            margin-top: 0;
-            color: #2c3e50;
+            font-family: 'Georgia', serif;
+            font-size: 28px;
+            color: #1a3d6d;
         }
-
         ul {
-            padding-left: 20px;
+            margin-top: 10px;
         }
-
-        /* Boîte de contact */
-        .contact-box {
-            background: #a7c4e0; /* bleu doux pour la boîte */
-            padding: 25px;
-            border-radius: 12px;
-            text-align: center;
-            margin-top: 40px;
+        li {
+            margin-bottom: 8px;
         }
-
-        .contact-box a {
-            background: #5274a3; /* bleu moyen pour le bouton */
-            padding: 14px 28px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-            display: inline-block;
-            margin-top: 15px;
-            transition: 0.3s;
-        }
-
-        .contact-box a:hover {
-            background: #3b5c85; /* bleu plus foncé au survol */
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #5274a3;
-            font-size: 1rem;
-            margin-top: 40px;
-        }
-
-        /* Section avec image (flex) */
         .section-flex {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 30px;
+            gap: 40px;
+            margin: 40px 0;
         }
-
-        .section-flex div {
-            flex: 1;
-            min-width: 280px;
-        }
-
         .section-flex img {
             width: 100%;
-            max-width: 400px;
+            max-width: 500px;
             border-radius: 12px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
-
-        @media (max-width: 768px) {
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #1a3d6d;
+            color: #ffffff;
+        }
+        @media(max-width: 768px) {
             header {
+                align-items: center;
                 text-align: center;
-                padding: 60px 20px;
             }
-
-            header h1 {
-                font-size: 3rem;
-            }
-
-            header h2 {
-                font-size: 1.5rem;
-            }
-
             .section-flex {
                 flex-direction: column;
-                text-align: center;
-            }
-
-            .section-flex img {
-                margin: 0 auto;
             }
         }
     </style>
 </head>
-
 <body>
+    <header>
+        <h1>Maud PELLAT</h1>
+        <h2>Gestalt Praticienne</h2>
+    </header>
 
-<header>
-    <h1>Maud PELLAT</h1>
-    <h2>Gestalt Praticienne</h2>
-</header>
+    <section>
+        <h3>Qui suis-je ?</h3>
+        <p>Consultante en Ressources Humaines depuis 2007, j’accompagne des entreprises de toutes tailles dans leurs enjeux RH : recrutement, intégration, développement des compétences, stabilisation et fidélisation des équipes, projections RH, etc.</p>
+        <p>Ce qui m’anime le plus dans mon métier, c’est toute la richesse de la dimension humaine.</p>
+        <p>C’est pourquoi j’ai également développé une approche tournée vers l’accompagnement des personnes, pour vous aider à répondre à vos problématiques et à retrouver plus de lumière, de douceur et d’alignement avec vous-même, dans votre vie professionnelle comme personnelle.</p>
+        <p>Pour cela, j’ai été formée et certifiée praticienne en Gestalt à l’École Humaniste de Gestalt, à Paris. Je poursuis également une formation continue afin d’approfondir constamment mes connaissances et mes compétences d’accompagnement en Gestalt.</p>
+    </section>
 
-<section>
-    <h3>À propos de moi</h3>
-    <p>Je m'appelle <strong>Maud PELLAT</strong>. Consultante en Ressources Humaines depuis 2007, j’accompagne des entreprises de toutes tailles dans leurs enjeux RH : recrutement, intégration, développement des compétences, stabilisation et fidélisation des équipes, projections RH, etc.</p>
-    <p>Ce qui m’anime le plus dans mon métier, c’est toute la richesse de la dimension humaine.</p>
-    <p>C’est pourquoi j’ai également développé une approche tournée vers l’accompagnement des personnes, pour vous aider à répondre à vos problématiques et à retrouver plus de lumière, de douceur et d’alignement avec vous-même, dans votre vie professionnelle comme personnelle.</p>
-    <p>Pour cela, j’ai été formée et certifiée praticienne en Gestalt à l’École Humaniste de Gestalt, à Paris.</p>
-    <p>Je poursuis également une formation continue afin d’approfondir constamment mes connaissances et mes compétences d’accompagnement en Gestalt. Ma pratique est régulièrement supervisée par un superviseur certifié et je suis moi-même suivie en thérapie pour continuer à travailler sur mon propre parcours de vie.</p>
-</section>
+    <section class="section-flex">
+        <div>
+            <h3>À qui s’adresse la Gestalt et pourquoi ?</h3>
+            <p>Mon accompagnement s’adresse à toute personne, adulte, qui souhaite mieux se comprendre, lever ses blocages et retrouver de l’alignement dans sa vie professionnelle et personnelle.</p>
+            <p>Que vous traversiez une période de transition, un changement de carrière, un manque de clarté, ou simplement l’envie de mieux gérer vos émotions et vos relations — personnelles ou professionnelles — je vous aide à prendre du recul, identifier vos ressources et avancer avec confiance.</p>
+            <p>Je vous offre un espace d’accueil, d’écoute, de compréhension et de non-jugement, où vous pouvez parler librement de vos difficultés, de votre couple, de votre travail, de votre histoire et de tout ce qui se joue dans votre vie.</p>
+            <p><strong>Mon accompagnement peut vous aider à :</strong></p>
+            <ul>
+                <li>Gérer le stress, les blocages ou les difficultés relationnelles,</li>
+                <li>Mieux prendre votre place, poser vos limites,</li>
+                <li>Comprendre vos schémas répétitifs,</li>
+                <li>Réguler vos émotions,</li>
+                <li>Trouver du soutien dans ce que vous vivez,</li>
+                <li>Clarifier et enrichir vos relations,</li>
+                <li>Stabilité affective, confiance en soi,</li>
+                <li>Retrouver du sens et créer une vie alignée,</li>
+                <li>Transformer vos mécanismes de sabotage.</li>
+            </ul>
+        </div>
+        <div>
+            <img src="https://previews.123rf.com/images/elenajoe/elenajoe1905/elenajoe190500037/123838863-giving-a-helping-hand-two-hands-man-and-woman-reaching-towards-each-other-at-sky-sunset.jpg" 
+                 alt="Deux mains qui se rejoignent vers le coucher de soleil">
+        </div>
+    </section>
 
-<section>
-    <h3>Qu’est-ce que la Gestalt ?</h3>
-    <p>Créée par Fritz Perls dans les années 1950 et ensuite développée aux États-Unis, la Gestalt est une méthode qui vient rompre avec le modèle de psychanalyse freudien qui se focalisait sur l’inconscient.</p>
-    <p>La Gestalt est une approche humaniste et holistique qui prend en compte le corps, les émotions, les pensées et les relations. Elle permet de mieux comprendre ce qui se joue en nous — nos émotions, nos ressentis, nos besoins — et comment nous nous relions aux autres et à notre environnement.</p>
-    <p>Plutôt que de chercher seulement pourquoi nous rencontrons des difficultés, la Gestalt explore comment nous fonctionnons dans l’instant présent. Elle met en lumière nos schémas répétitifs, nos blocages et nos ressources, et nous aide à retrouver du mouvement, du choix et une plus grande liberté intérieure.</p>
-    <p>Petit à petit, vous reprenez le gouvernail de votre vie : vous créez, non pour être parfait, mais pour être vivant, aligné et en harmonie avec vous-même.</p>
-    <p>La Gestalt est une démarche douce, respectueuse et profondément humaine, qui ouvre la voie à plus de clarté, de confiance et de mieux-être.</p>
-</section>
+    <section>
+        <p>Je vous accompagne en visioconférence, pour plus de praticité et de flexibilité, où que vous soyez. Faire appel à moi, c’est bénéficier d’un accompagnement bienveillant, personnalisé et concret, qui vous permet de reprendre le gouvernail de votre vie, de retrouver de la légèreté et de créer un chemin qui vous ressemble vraiment.</p>
+        <p>Pour me contacter et prendre rendez-vous appelez-moi au 06 48 01 65 07</p>
+    </section>
 
-<section class="section-flex">
-    <div>
-        <h3>A qui s’adresse la Gestalt et pourquoi ?</h3>
-        <p>Mon accompagnement s’adresse à toute personne, adulte, qui souhaite mieux se comprendre, lever ses blocages et retrouver de l’alignement dans sa vie professionnelle et personnelle.</p>
-        <p>Que vous traversiez une période de transition, un changement de carrière, un manque de clarté, ou simplement l’envie de mieux gérer vos émotions et vos relations — personnelles ou professionnelles — je vous aide à prendre du recul, identifier vos ressources et avancer avec confiance.</p>
-        <p>Je vous offre un espace d’accueil, d’écoute, de compréhension et de non-jugement, où vous pouvez parler librement de vos difficultés, de votre couple, de votre travail, de votre histoire et de tout ce qui se joue dans votre vie.</p>
-        <p><strong>Mon accompagnement peut vous aider à :</strong></p>
-        <ul>
-            <li>Gérer le stress, les blocages ou les difficultés relationnelles,</li>
-            <li>Mieux prendre votre place, poser vos limites,</li>
-            <li>Comprendre vos schémas répétitifs,</li>
-            <li>Réguler vos émotions,</li>
-            <li>Trouver du soutien dans ce que vous vivez,</li>
-            <li>Clarifier et enrichir vos relations,</li>
-            <li>Stabilité affective, confiance en soi,</li>
-            <li>Retrouver du sens et créer une vie alignée,</li>
-            <li>Transformer vos mécanismes de sabotage.</li>
-        </ul>
-    </div>
-    <div>
-        <img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=600&q=80" 
-             alt="Main tendue">
-    </div>
-</section>
-
-<section class="contact-box">
-    <p><strong>Pour me contacter et prendre rendez-vous :</strong></p>
-    <a href="tel:+33648016507">📞 06 48 01 65 07</a>
-</section>
-
-<footer>
-    © 2025 – Maud PELLAT
-</footer>
-
+    <footer>
+        &copy; 2025 Maud PELLAT - Gestalt Praticienne
+    </footer>
 </body>
 </html>
