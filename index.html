@@ -13,7 +13,7 @@
             background-color: #f7f9fc;
         }
 
-        /* Header avec image et texte en bas à gauche */
+        /* Header avec texte en bas à gauche */
         header {
             position: relative;
             background: url('https://media.posterstore.com/site_images/6862c77d0b074212f55c6be2_678648473_PS51410-5.jpg') center/cover no-repeat;
@@ -22,8 +22,8 @@
 
         .header-text {
             position: absolute;
-            bottom: 30px; /* ajustable selon besoin */
-            left: 30px;
+            bottom: 30px; /* distance depuis le bas */
+            left: 30px;   /* distance depuis la gauche */
             color: #ffffff;
             text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
         }
@@ -39,6 +39,7 @@
             margin-top: 5px;
         }
 
+        /* Sections */
         section {
             padding: 40px 20px;
             max-width: 1200px;
@@ -63,7 +64,7 @@
             margin-bottom: 15px;
         }
 
-        /* Réduire l'espace entre paragraphe 1 et 2 de "Qui suis-je ?" */
+        /* Réduire espace entre 1er et 2ème paragraphe "Qui suis-je ?" */
         section:first-of-type p:nth-of-type(1) {
             margin-bottom: 8px;
         }
