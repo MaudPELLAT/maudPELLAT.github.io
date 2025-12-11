@@ -13,28 +13,30 @@
             background-color: #f7f9fc;
         }
 
+        /* Header avec image et texte en bas à gauche */
         header {
-            background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('https://media.posterstore.com/site_images/6862c77d0b074212f55c6be2_678648473_PS51410-5.jpg') center/cover no-repeat;
+            position: relative;
+            background: url('https://media.posterstore.com/site_images/6862c77d0b074212f55c6be2_678648473_PS51410-5.jpg') center/cover no-repeat;
             height: 450px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* centrage vertical */
-            align-items: flex-start; /* reste à gauche */
-            padding: 60px;
+        }
+
+        .header-text {
+            position: absolute;
+            bottom: 30px; /* ajustable selon besoin */
+            left: 30px;
+            color: #ffffff;
             text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
         }
 
-        header h1 {
+        .header-text h1 {
             font-family: 'Edwardian Script ITC', cursive;
             font-size: 60px;
             margin: 0;
-            color: #ffffff;
         }
 
-        header h2 {
+        .header-text h2 {
             font-size: 28px;
-            margin-top: 10px;
-            color: #ffffff;
+            margin-top: 5px;
         }
 
         section {
@@ -45,6 +47,7 @@
             background-color: #ffffffdd;
             box-shadow: 0 6px 20px rgba(0,0,0,0.05);
             margin-bottom: 30px;
+            text-align: left;
         }
 
         h3 {
@@ -54,13 +57,13 @@
             margin-bottom: 20px;
         }
 
-        /* Alignement des paragraphes à gauche */
         section p {
             text-align: left;
+            margin-top: 0;
             margin-bottom: 15px;
         }
 
-        /* Réduction de l'espace entre paragraphe 1 et 2 */
+        /* Réduire l'espace entre paragraphe 1 et 2 de "Qui suis-je ?" */
         section:first-of-type p:nth-of-type(1) {
             margin-bottom: 8px;
         }
@@ -77,9 +80,14 @@
         .section-flex {
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
+            align-items: flex-start;
             gap: 40px;
             margin: 40px 0;
+        }
+
+        .section-flex > div {
+            flex: 1;
+            min-width: 280px;
         }
 
         .section-flex img {
@@ -115,20 +123,22 @@
         }
 
         @media(max-width: 768px) {
-            header {
-                align-items: center;
-                text-align: center;
-            }
             .section-flex {
                 flex-direction: column;
+            }
+            .header-text {
+                bottom: 20px;
+                left: 20px;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Maud PELLAT</h1>
-        <h2>Gestalt Praticienne</h2>
+        <div class="header-text">
+            <h1>Maud PELLAT</h1>
+            <h2>Gestalt Praticienne</h2>
+        </div>
     </header>
 
     <section>
