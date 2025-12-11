@@ -16,7 +16,7 @@
             background-color: #f7f9fc;
         }
 
-        /* Header avec texte sur l'image */
+        /* Header */
         header {
             position: relative;
             background: url('https://media.posterstore.com/site_images/6862c77d0b074212f55c6be2_678648473_PS51410-5.jpg') center/cover no-repeat;
@@ -26,8 +26,8 @@
 
         .header-text {
             position: absolute;
-            bottom: 40px;      /* plus bas dans l'image */
-            left: 30px;        /* aligné à gauche */
+            bottom: 40px;
+            left: clamp(40px, 8vw, 120px); /* décalé à droite pour ne jamais sortir de l'image */
             color: #ffffff;
             text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
         }
@@ -77,23 +77,9 @@
             margin-bottom: 8px;
         }
 
+        /* Section flex retirée car l'image est supprimée */
         .section-flex {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            align-items: flex-start;
-        }
-
-        .section-flex > div {
-            flex: 1;
-            min-width: 280px;
-        }
-
-        .section-flex img {
-            width: 100%;
-            max-width: 500px;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            display: block; /* devient une section pleine largeur */
         }
 
         .btn-contact {
@@ -120,16 +106,6 @@
             background-color: #1a3d6d;
             color: #ffffff;
         }
-
-        @media(max-width: 768px) {
-            .section-flex {
-                flex-direction: column;
-            }
-            .header-text {
-                bottom: 20px;
-                left: 20px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -141,6 +117,7 @@
     </header>
 
     <main>
+
         <section aria-label="Qui suis-je">
             <h3>Qui suis-je ?</h3>
             <p>Consultante en Ressources Humaines depuis 2007, j’accompagne des entreprises de toutes tailles dans leurs enjeux RH : recrutement, intégration, développement des compétences, stabilisation et fidélisation des équipes, projections RH, etc.</p>
@@ -151,7 +128,7 @@
         </section>
 
         <section aria-label="Qu'est-ce que la Gestalt">
-            <h3>Qu’est-ce que la Gestalt ?</h3>
+            <h3>Alors, qu’est-ce que la Gestalt ?</h3>
             <p>Créée par Fritz Perls dans les années 1950 et ensuite développée aux États-Unis, la Gestalt est une méthode qui vient rompre avec le modèle de psychanalyse freudien qui se focalisait sur l’inconscient.</p>
             <p>La Gestalt est une approche humaniste et holistique qui prend en compte le corps, les émotions, les pensées et les relations. Elle permet de mieux comprendre ce qui se joue en nous — nos émotions, nos ressentis, nos besoins — et comment nous nous relions aux autres et à notre environnement.</p>
             <p>Plutôt que de chercher seulement pourquoi nous rencontrons des difficultés, la Gestalt explore comment nous fonctionnons dans l’instant présent. Elle met en lumière nos schémas répétitifs, nos blocages et nos ressources, et nous aide à retrouver du mouvement, du choix et une plus grande liberté intérieure.</p>
@@ -160,32 +137,31 @@
         </section>
 
         <section class="section-flex" aria-label="À qui s'adresse la Gestalt">
-            <div>
-                <h3>À qui s’adresse la Gestalt et pourquoi ?</h3>
-                <p>Mon accompagnement s’adresse à toute personne adulte qui souhaite mieux se comprendre, lever ses blocages et retrouver de l’alignement dans sa vie professionnelle et personnelle.</p>
-                <p>Que vous traversiez une période de transition, un changement de carrière, un manque de clarté, ou simplement l’envie de mieux gérer vos émotions et vos relations — personnelles ou professionnelles — je vous aide à prendre du recul, identifier vos ressources et avancer avec confiance.</p>
-                <p>Je vous offre un espace d’accueil, d’écoute, de compréhension et de non-jugement, où vous pouvez parler librement de vos difficultés, de votre couple, de votre travail, de votre histoire et de tout ce qui se joue dans votre vie.</p>
-                <p><strong>Mon accompagnement peut vous aider à :</strong></p>
-                <ul>
-                    <li>Gérer le stress, les blocages ou les difficultés relationnelles, au travail ou dans votre vie personnelle,</li>
-                    <li>Mieux prendre votre place, poser vos limites et gérer votre charge cognitive,</li>
-                    <li>Comprendre vos schémas répétitifs pour ne plus rester coincé dans les mêmes situations,</li>
-                    <li>Apprendre à reconnaître et réguler vos émotions,</li>
-                    <li>Trouver un soutien face à ce que vous vivez,</li>
-                    <li>Clarifier et enrichir vos relations avec les autres,</li>
-                    <li>Avancer dans votre vie affective, trouver plus de stabilité,</li>
-                    <li>Travailler votre confiance en vous et mieux connaître vos qualités et forces,</li>
-                    <li>Donner plus de sens à votre vie et créer de nouvelles postures, pour une vie plus alignée avec vos valeurs et principes,</li>
-                    <li>Vivre pleinement le moment présent et devenir acteur de votre propre changement,</li>
-                    <li>Comprendre et transformer vos mécanismes de sabotage et trouver de nouvelles clés pour mieux gérer les situations du quotidien et les changements.</li>
-                </ul>
-                <p>L’originalité de la Gestalt est de vous faire travailler sur votre présence au monde, en conscientisant vos réactions face aux situations, pour créer des changements profonds et durables.</p>
-                <a href="tel:0648016507" class="btn-contact">Prendre rendez-vous</a>
-            </div>
-            <div>
-                <img src="https://previews.123rf.com/images/elenajoe/elenajoe1905/elenajoe190500037/123838863-giving-a-helping-hand-two-hands-man-and-woman-reaching-towards-each-other-at-sky-sunset.jpg" 
-                     alt="Deux mains se rejoignant vers le coucher de soleil">
-            </div>
+            <h3>À qui s’adresse la Gestalt et pourquoi ?</h3>
+
+            <p>Mon accompagnement s’adresse à toute personne adulte qui souhaite mieux se comprendre, lever ses blocages et retrouver de l’alignement dans sa vie professionnelle et personnelle. Que vous traversiez une période de transition, un changement de carrière, un manque de clarté, ou simplement l’envie de mieux gérer vos émotions et vos relations — personnelles ou professionnelles — je vous aide à prendre du recul, identifier vos ressources et avancer avec confiance.</p>
+
+            <p>Je vous offre un espace d’accueil, d’écoute, de compréhension et de non-jugement, où vous pouvez parler librement de vos difficultés, de votre couple, de votre travail, de votre histoire et de tout ce qui se joue dans votre vie.</p>
+
+            <p><strong>Mon accompagnement peut vous aider à :</strong></p>
+
+            <ul>
+                <li>Gérer le stress, les blocages ou les difficultés relationnelles, au travail ou dans votre vie personnelle,</li>
+                <li>Mieux prendre votre place, poser vos limites et gérer votre charge cognitive,</li>
+                <li>Comprendre vos schémas répétitifs pour ne plus rester coincé dans les mêmes situations,</li>
+                <li>Apprendre à reconnaître et réguler vos émotions,</li>
+                <li>Trouver un soutien face à ce que vous vivez,</li>
+                <li>Clarifier et enrichir vos relations avec les autres,</li>
+                <li>Avancer dans votre vie affective, trouver plus de stabilité ou l’amour,</li>
+                <li>Travailler votre confiance en vous et mieux connaître vos qualités et forces,</li>
+                <li>Donner plus de sens à votre vie et créer de nouvelles postures,</li>
+                <li>Vivre pleinement le moment présent et devenir acteur de votre propre changement,</li>
+                <li>Comprendre et transformer vos mécanismes de sabotage.</li>
+            </ul>
+
+            <p>L’originalité de la Gestalt est de vous faire travailler sur votre présence au monde, en conscientisant vos réactions face aux situations, pour créer des changements profonds et durables.</p>
+
+            <a href="tel:0648016507" class="btn-contact">Prendre rendez-vous</a>
         </section>
 
         <section aria-label="Accompagnement en visioconférence">
