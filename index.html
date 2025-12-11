@@ -18,8 +18,8 @@
             height: 450px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
+            justify-content: center; /* centrage vertical */
+            align-items: flex-start; /* reste à gauche */
             padding: 60px;
             text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
         }
@@ -42,7 +42,7 @@
             max-width: 1200px;
             margin: auto;
             border-radius: 12px;
-            background-color: #ffffffdd; /* léger fond pastel */
+            background-color: #ffffffdd;
             box-shadow: 0 6px 20px rgba(0,0,0,0.05);
             margin-bottom: 30px;
         }
@@ -52,6 +52,17 @@
             font-size: 28px;
             color: #1a3d6d;
             margin-bottom: 20px;
+        }
+
+        /* Alignement des paragraphes à gauche */
+        section p {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        /* Réduction de l'espace entre paragraphe 1 et 2 */
+        section:first-of-type p:nth-of-type(1) {
+            margin-bottom: 8px;
         }
 
         ul {
@@ -82,7 +93,7 @@
             display: inline-block;
             padding: 12px 25px;
             margin-top: 20px;
-            background: #7fb3d5; /* bleu doux */
+            background: #7fb3d5;
             color: white;
             text-decoration: none;
             border-radius: 30px;
