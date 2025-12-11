@@ -6,7 +6,7 @@
     <title>Maud PELLAT – Gestalt Praticienne</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
 
     <style>
         /* Styles généraux */
@@ -19,29 +19,30 @@
             color: #2c3e50; /* bleu foncé pour le texte */
         }
 
-        /* En-tête avec image de fond et overlay bleu */
+        /* Header avec photo visible */
         header {
-            background: linear-gradient(rgba(216,230,242,0.7), rgba(200,220,240,0.7)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-            padding: 120px 20px;
-            text-align: center;
+            text-align: left;
+            padding: 80px 60px;
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
             border-bottom: 1px solid #c5d6e5;
         }
 
         header h1 {
-            font-family: 'Edwardian Script ITC', cursive, serif;
+            font-family: 'Playfair Display', serif;
             font-weight: 400;
-            font-size: 4rem;
-            letter-spacing: 1px;
+            font-size: 3.5rem;
+            color: white;
             margin: 0;
-            color: #2c3e50;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
         }
 
         header h2 {
-            margin-top: 10px;
-            font-weight: 300;
-            font-size: 1.5rem;
-            color: #5274a3; /* bleu moyen */
             font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            font-size: 2rem;
+            color: #f0f8ff;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
         }
 
         /* Sections principales */
@@ -58,7 +59,7 @@
             font-family: 'Lato', sans-serif;
             font-size: 1.9rem;
             margin-top: 0;
-            color: #2c3e50; /* bleu foncé */
+            color: #2c3e50;
         }
 
         ul {
@@ -90,13 +91,57 @@
             background: #3b5c85; /* bleu plus foncé au survol */
         }
 
-        /* Pied de page */
+        /* Footer */
         footer {
             text-align: center;
             padding: 40px;
-            color: #5274a3; /* bleu moyen */
+            color: #5274a3;
             font-size: 1rem;
             margin-top: 40px;
+        }
+
+        /* Section avec image (flex) */
+        .section-flex {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .section-flex div {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .section-flex img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                text-align: center;
+                padding: 60px 20px;
+            }
+
+            header h1 {
+                font-size: 3rem;
+            }
+
+            header h2 {
+                font-size: 1.5rem;
+            }
+
+            .section-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section-flex img {
+                margin: 0 auto;
+            }
         }
     </style>
 </head>
@@ -126,28 +171,34 @@
     <p>La Gestalt est une démarche douce, respectueuse et profondément humaine, qui ouvre la voie à plus de clarté, de confiance et de mieux-être.</p>
 </section>
 
-<section>
-    <h3>A qui s’adresse la Gestalt et pourquoi ?</h3>
-    <p>Mon accompagnement s’adresse à toute personne, adulte, qui souhaite mieux se comprendre, lever ses blocages et retrouver de l’alignement dans sa vie professionnelle et personnelle.</p>
-    <p>Que vous traversiez une période de transition, un changement de carrière, un manque de clarté, ou simplement l’envie de mieux gérer vos émotions et vos relations — personnelles ou professionnelles — je vous aide à prendre du recul, identifier vos ressources et avancer avec confiance.</p>
-    <p>Je vous offre un espace d’accueil, d’écoute, de compréhension et de non-jugement, où vous pouvez parler librement de vos difficultés, de votre couple, de votre travail, de votre histoire et de tout ce qui se joue dans votre vie.</p>
-    <p><strong>Mon accompagnement peut vous aider à :</strong></p>
-    <ul>
-        <li>Gérer le stress, les blocages ou les difficultés relationnelles,</li>
-        <li>Mieux prendre votre place, poser vos limites,</li>
-        <li>Comprendre vos schémas répétitifs,</li>
-        <li>Réguler vos émotions,</li>
-        <li>Trouver du soutien dans ce que vous vivez,</li>
-        <li>Clarifier et enrichir vos relations,</li>
-        <li>Stabilité affective, confiance en soi,</li>
-        <li>Retrouver du sens et créer une vie alignée,</li>
-        <li>Transformer vos mécanismes de sabotage.</li>
-    </ul>
-
-    <div class="contact-box">
-        <p><strong>Pour me contacter et prendre rendez-vous :</strong></p>
-        <a href="tel:+33648016507">📞 06 48 01 65 07</a>
+<section class="section-flex">
+    <div>
+        <h3>A qui s’adresse la Gestalt et pourquoi ?</h3>
+        <p>Mon accompagnement s’adresse à toute personne, adulte, qui souhaite mieux se comprendre, lever ses blocages et retrouver de l’alignement dans sa vie professionnelle et personnelle.</p>
+        <p>Que vous traversiez une période de transition, un changement de carrière, un manque de clarté, ou simplement l’envie de mieux gérer vos émotions et vos relations — personnelles ou professionnelles — je vous aide à prendre du recul, identifier vos ressources et avancer avec confiance.</p>
+        <p>Je vous offre un espace d’accueil, d’écoute, de compréhension et de non-jugement, où vous pouvez parler librement de vos difficultés, de votre couple, de votre travail, de votre histoire et de tout ce qui se joue dans votre vie.</p>
+        <p><strong>Mon accompagnement peut vous aider à :</strong></p>
+        <ul>
+            <li>Gérer le stress, les blocages ou les difficultés relationnelles,</li>
+            <li>Mieux prendre votre place, poser vos limites,</li>
+            <li>Comprendre vos schémas répétitifs,</li>
+            <li>Réguler vos émotions,</li>
+            <li>Trouver du soutien dans ce que vous vivez,</li>
+            <li>Clarifier et enrichir vos relations,</li>
+            <li>Stabilité affective, confiance en soi,</li>
+            <li>Retrouver du sens et créer une vie alignée,</li>
+            <li>Transformer vos mécanismes de sabotage.</li>
+        </ul>
     </div>
+    <div>
+        <img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=600&q=80" 
+             alt="Main tendue">
+    </div>
+</section>
+
+<section class="contact-box">
+    <p><strong>Pour me contacter et prendre rendez-vous :</strong></p>
+    <a href="tel:+33648016507">📞 06 48 01 65 07</a>
 </section>
 
 <footer>
