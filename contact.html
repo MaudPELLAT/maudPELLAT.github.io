@@ -2,64 +2,52 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Contact – Maud PELLAT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Parisienne&display=swap" rel="stylesheet">
+    <title>Maud PELLAT - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Parisienne&family=Georgia:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <div class="header-text">
+            <h1 class="nom-elegant">Maud PELLAT</h1>
+            <h2>Gestalt Praticienne</h2>
+        </div>
+    </header>
 
-<!-- ===== MENU ===== -->
-<header class="site-header">
-    <nav class="nav">
-        <ul class="nav-list">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="qui-suis-je.html">Qui suis-je</a></li>
-            <li><a href="gestalt-praticienne.html">Gestalt-praticienne</a></li>
-            <li><a href="consultation-en-ligne.html">Consultation en ligne</a></li>
-            <li><a href="infos-pratiques.html">Infos pratiques</a></li>
-            <li><a href="temoignages.html">Témoignages</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <ul class="nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="qui-suis-je.html">Qui suis-je</a></li>
+        <li><a href="gestalt-praticienne.html">Gestalt-praticienne</a></li>
+        <li><a href="consultation-en-ligne.html">Consultation en ligne</a></li>
+        <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+        <li><a href="temoignages.html">Témoignages</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
 
-<main>
-    <section>
-        <h1>Contact</h1>
+    <main>
+        <section>
+            <h3>Contact</h3>
+            <p>Pour prendre rendez-vous ou pour toute question, vous pouvez me contacter :</p>
+            <ul>
+                <li>Téléphone : <a href="tel:0648016507">06 48 01 65 07</a></li>
+                <li>Email : <a href="mailto:maud.pellat@example.com">maud.pellat@example.com</a></li>
+            </ul>
+            <p>Vous pouvez également utiliser le formulaire de contact ci-dessous :</p>
+            <form>
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom" required><br><br>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
 
-        <p>Vous pouvez me contacter directement via :</p>
-
-        <ul>
-            <li>Téléphone : <a href="tel:0648016507">06 48 01 65 07</a></li>
-            <li>Email : <a href="mailto:contact@maudpellat.com">contact@maudpellat.com</a></li>
-        </ul>
-
-        <p>
-            Vous pouvez également remplir le formulaire ci-dessous pour m’envoyer un message : 
-        </p>
-
-        <form action="#" method="post">
-            <label for="name">Nom :</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email :</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="message">Message :</label><br>
-            <textarea id="message" name="message" rows="6" required></textarea><br><br>
-
-            <button type="submit">Envoyer</button>
-        </form>
-
-    </section>
-</main>
-
-<footer>
-    &copy; 2025 Maud PELLAT – Gestalt Praticienne
-</footer>
-
+    <footer>
+        &copy; 2025 Maud PELLAT - Gestalt Praticienne
+    </footer>
 </body>
 </html>
