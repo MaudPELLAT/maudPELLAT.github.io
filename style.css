@@ -109,3 +109,26 @@ li {
     border-radius: 30px;
     font-weight: bold;
     box-shadow
+    /* ===== Onglets bleu et plus visibles ===== */
+.nav-list li a {
+    text-decoration: none;
+    color: #1a3d6d; /* bleu foncé */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+    background-color: rgba(127, 179, 213, 0.2); /* léger fond bleu clair */
+    color: #1a3d6d; /* reste bleu foncé */
+}
+
+/* ===== Nom élégant ===== */
+.nom-elegant {
+    font-family: 'Parisienne', cursive;
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #1a3d6d; /* bleu pour rester harmonieux */
+}
+
