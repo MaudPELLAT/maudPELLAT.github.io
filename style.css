@@ -1,0 +1,111 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #1a3d6d;
+    background-color: #f7f9fc;
+}
+
+/* ===== HEADER ===== */
+header.site-header {
+    background: url('https://media.posterstore.com/site_images/6862c77d0b074212f55c6be2_678648473_PS51410-5.jpg') center/cover no-repeat;
+    height: 60vh;
+    min-height: 400px;
+    position: relative;
+}
+
+header .nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ===== HEADER TEXT ===== */
+.header-text {
+    position: absolute;
+    bottom: 40px;
+    left: clamp(40px, 8vw, 120px);
+    color: #ffffff;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+.header-text h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin-bottom: 0.3em;
+}
+
+.header-text h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 400;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    background-color: #ffffffdd;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    padding: 40px 30px;
+}
+
+h1, h3 {
+    font-family: 'Georgia', serif;
+    color: #1a3d6d;
+    margin-bottom: 20px;
+}
+
+p, ul {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ===== BUTTONS ===== */
+.btn-contact, button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #7fb3d5;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow
