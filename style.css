@@ -1,10 +1,11 @@
-/* ===== RESET ===== */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
@@ -12,41 +13,14 @@ body {
     background-color: #f7f9fc;
 }
 
-/* ===== HEADER ===== */
-header.site-header {
+/* HEADER */
+header {
+    position: relative;
     background: url('https://media.posterstore.com/site_images/6862c77d0b074212f55c6be2_678648473_PS51410-5.jpg') center/cover no-repeat;
     height: 60vh;
     min-height: 400px;
-    position: relative;
 }
 
-header .nav {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.nav-list {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 20px;
-    transition: background 0.3s;
-}
-
-.nav-list li a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-/* ===== HEADER TEXT ===== */
 .header-text {
     position: absolute;
     bottom: 40px;
@@ -55,10 +29,10 @@ header .nav {
     text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
 }
 
-.header-text h1 {
+.nom-elegant {
     font-family: 'Parisienne', cursive;
-    font-size: clamp(2.5rem, 8vw, 4rem);
-    margin-bottom: 0.3em;
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #1a3d6d; /* bleu foncé */
 }
 
 .header-text h2 {
@@ -66,7 +40,35 @@ header .nav {
     font-weight: 400;
 }
 
-/* ===== MAIN CONTENT ===== */
+/* MENU */
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffffdd;
+    padding: 10px 0;
+}
+
+.nav li {
+    margin: 0 10px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #1a3d6d;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav li a:hover,
+.nav li a.active {
+    background-color: rgba(127, 179, 213, 0.2);
+    color: #1a3d6d;
+}
+
+/* MAIN CONTENT */
 main {
     max-width: 1200px;
     margin: auto;
@@ -81,54 +83,49 @@ section {
     padding: 40px 30px;
 }
 
-h1, h3 {
+h3 {
     font-family: 'Georgia', serif;
+    font-size: 2rem;
     color: #1a3d6d;
     margin-bottom: 20px;
 }
 
-p, ul {
+p {
     margin-bottom: 15px;
 }
 
 ul {
     padding-left: 20px;
+    margin-top: 10px;
 }
 
 li {
     margin-bottom: 8px;
 }
 
-/* ===== BUTTONS ===== */
-.btn-contact, button {
+/* BOUTON CONTACT */
+.btn-contact {
     display: inline-block;
     padding: 12px 25px;
+    margin-top: 20px;
     background: #7fb3d5;
     color: white;
     text-decoration: none;
     border-radius: 30px;
     font-weight: bold;
-    box-shadow
-    /* ===== Onglets bleu et plus visibles ===== */
-.nav-list li a {
-    text-decoration: none;
-    color: #1a3d6d; /* bleu foncé */
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 20px;
-    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: background 0.3s, transform 0.2s;
 }
 
-.nav-list li a:hover,
-.nav-list li a.active {
-    background-color: rgba(127, 179, 213, 0.2); /* léger fond bleu clair */
-    color: #1a3d6d; /* reste bleu foncé */
+.btn-contact:hover, .btn-contact:focus {
+    background: #5a96bf;
+    transform: translateY(-2px);
 }
 
-/* ===== Nom élégant ===== */
-.nom-elegant {
-    font-family: 'Parisienne', cursive;
-    font-size: clamp(3rem, 8vw, 5rem);
-    color: #1a3d6d; /* bleu pour rester harmonieux */
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #1a3d6d;
+    color: #ffffff;
 }
-
