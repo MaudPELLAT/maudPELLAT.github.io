@@ -151,13 +151,16 @@ footer {
   max-width: 600px;
   width: 90%;
   height: auto;
-}
+ }   
+
 .image-gestalt {
   display: block;
-  margin: 50px auto;
-  max-width: 700px;
+  margin: 60px auto;
+  max-width: 500px;   /* 👈 plus étroit = centrage visible */
   width: 100%;
   height: auto;
+  border-radius: 12px;
 }
+
 
 
