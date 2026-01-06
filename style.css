@@ -216,6 +216,26 @@ footer {
   outline: none;
   border-color: #7fb3d5;
 }
+/* CONTACT PAGE ACCUEIL */
+.contact-accueil {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-telephone {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contact-telephone a {
+  color: #1a3d6d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-telephone a:hover {
+  text-decoration: underline;
+}
 
 
 
