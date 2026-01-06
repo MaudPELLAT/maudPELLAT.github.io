@@ -128,3 +128,18 @@ footer {
     background-color: #1a3d6d;
     color: #ffffff;
 }
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    background-color: #6b8e9b;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #567680;
+}
+
