@@ -145,6 +145,12 @@ footer {
 .cta-button:hover {
     background-color: #567680;
 }
-
+.image-accueil {
+  display: block;
+  margin: 40px auto;
+  max-width: 600px;
+  width: 90%;
+  height: auto;
+}
 
 
