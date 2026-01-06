@@ -152,5 +152,12 @@ footer {
   width: 90%;
   height: auto;
 }
+.image-gestalt {
+  display: block;
+  margin: 50px auto;
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+}
 
 
