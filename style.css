@@ -129,17 +129,22 @@ footer {
     color: #ffffff;
 }
 .cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 14px 30px;
+    display: block;              /* permet le centrage */
+    width: fit-content;          /* bouton à la taille du texte */
+    margin: 30px auto;           /* centre horizontalement */
+    padding: 18px 40px;          /* plus grand */
     background-color: #6b8e9b;
     color: white;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 30px;
     font-weight: bold;
+    font-size: 1.1em;            /* texte plus visible */
+    text-align: center;
 }
 
 .cta-button:hover {
     background-color: #567680;
 }
+
+
 
