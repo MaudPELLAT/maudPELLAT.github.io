@@ -245,4 +245,29 @@ footer {
     color: #5a4d44;
 }
 
+.testimonials {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.testimonials h3 {
+    margin-bottom: 40px;
+}
+
+.testimonial.soft {
+    border-left: 4px solid #8f7a6a;
+    padding-left: 20px;
+    margin-bottom: 35px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-size: 0.9em;
+    color: #6f5f53;
+}
 
